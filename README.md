@@ -118,4 +118,16 @@ An increase in paid subscriptions is valuable only if customers remain engaged w
 Short-Term Growth at the Expense of Long-Term Value
 A campaign that increases initial conversions without improving engagement, retention, or revenue may create temporary improvements while weakening sustainable business performance.
 Conclusion
-The Trial-to-Paid Conversion Rate (converted_to_paid) is the most appropriate North Star metric because it directly reflects the company's primary objective of converting trial users into paying customers. However, it should not be evaluated in isolation. Leadership should assess this metric alongside supporting KPIs—such as onboarding completion, engagement, and 30-day revenue—and guardrail metrics, including support tickets and refund requests, to ensure that the new onboarding campaign delivers sustainable business growth while maintaining a positive user experience and operational efficiency. how is this
+The Trial-to-Paid Conversion Rate (converted_to_paid) is the most appropriate North Star metric because it directly reflects the company's primary objective of converting trial users into paying customers. However, it should not be evaluated in isolation. Leadership should assess this metric alongside supporting KPIs—such as onboarding completion, engagement, and 30-day revenue—and guardrail metrics, including support tickets and refund requests, to ensure that the new onboarding campaign delivers sustainable business growth while maintaining a positive user experience and operational efficiency.
+
+
+Experiment analysis approach
+
+Parameter	Validation Metric / Finding	Strategic Action Taken
+**Duplicate User IDs:**	8 duplicate rows detected (e.g., USR-100096, USR-100433). Exact row clones.	Deduplicated by keeping the first occurrence.
+**Group Counts	Control:** 693 users ; Treatment: 715 users (Pre-deduplication).	Sample sizes are balanced enough for standard statistical tests.
+**Missing Values:**	device_type (18), traffic_source (24), engagement_score (14), days_to_convert (1336).	Categorical: Labeled as 'Unknown'. Scores: Imputed via median. Days to convert: Left blank for non-converters.
+**Invalid Binary Flags:**	Checked all columns: All strictly map to [0, 1].	No clean-up required.
+**Revenue Outliers:**	Max revenue reached $8,610.72. Out of 72 paid conversions, 7 generated over $2,000.	Real commercial outliers. Kept intact for revenue-metric tracking, winsorized version prepared for T-tests.
+**Segment Alignment	Category**: distributions remain symmetric across groups.	No randomization bias detected. Funnel ready for analysis.
+		
