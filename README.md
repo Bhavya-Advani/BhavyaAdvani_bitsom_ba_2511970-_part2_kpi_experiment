@@ -130,4 +130,19 @@ Parameter	Validation Metric / Finding	Strategic Action Taken
 **Invalid Binary Flags:**	Checked all columns: All strictly map to [0, 1].	No clean-up required.
 **Revenue Outliers:**	Max revenue reached $8,610.72. Out of 72 paid conversions, 7 generated over $2,000.	Real commercial outliers. Kept intact for revenue-metric tracking, winsorized version prepared for T-tests.
 **Segment Alignment	Category**: distributions remain symmetric across groups.	No randomization bias detected. Funnel ready for analysis.
-		
+
+
+
+		Metric	Control Group	Treatment Group	Absolute Shift / Observations
+User Count:	690; 710;	Well-balanced; random cell assignment.
+Landing Page Visit Rate:	63.60%;	72.40%;	+8.8%; lift in top-of-funnel activity.
+Trial Start Rate:	25.10%;	29.00%;	+3.9%; conversion into evaluation period.
+Onboarding Completion Rate:	15.70%;	21.10%;	+5.4%; walkthrough clearance rate.
+Paid Conversion Rate (North Star):	3.20%;	7.00%;	+3.8%; absolute lift (more than doubled).
+Average Revenue Per User (ARPU):	$51.97;	$54.25;	Slight growth (+4.4%); but heavily compressed.
+Avg Revenue Per Converted User:	$1,630.10;	$770.41;	Dropped by 52.7% (Indicates low-value subscriptions).
+Refund Rate (Guardrail):	0.00%;	0.42%;	Small uptick in the treatment variant.
+Support Ticket Rate (Guardrail):	14.80%;	24.80%;	+10.0%; spike (Severe post-launch UX confusion).
+Average Engagement Score:	57;	62.9;	Improved active interaction marks.
+Average Days to Convert:	8.9 Days;	6.4 Days;	-2.5 Days; faster time-to-value (TTV).
+			
