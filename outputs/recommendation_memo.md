@@ -1,1 +1,3 @@
 
+
+The company conducted an A/B test to evaluate whether a new onboarding and activation campaign improves user conversion and early engagement compared with the existing onboarding experience. The primary business objective is to determine whether the treatment should be rolled out to all users based on its impact on trial-to-paid conversion, onboarding completion, engagement, and early revenue. The analysis must also ensure that improvements in these metrics do not negatively affect user experience, as measured by guardrail metrics such as support tickets and refund requests. The final recommendation will be based on statistically and practically significant improvements in key business metrics while maintaining acceptable performance on guardrail metrics.
