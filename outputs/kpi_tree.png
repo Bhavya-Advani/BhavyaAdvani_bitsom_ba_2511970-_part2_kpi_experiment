@@ -1,1 +1,142 @@
 
+# Task 3: KPI Tree
+
+## KPI Tree for the Onboarding and Activation Campaign
+
+The objective of the KPI tree is to illustrate how the primary business goal—converting trial users into paying subscribers—is influenced by key business drivers and supporting metrics. It also highlights the guardrail metrics that ensure growth is achieved without negatively affecting customer experience or operational performance.
+
+---
+
+North Star Metric
+
+Trial-to-Paid Conversion Rate (converted_to_paid)
+The percentage of users who convert from a free trial to a paid subscription. This is the primary measure of success because it directly reflects the effectiveness of the onboarding and activation campaign in generating paying customers.
+
+---
+
+## KPI Tree
+
+
+                           NORTH STAR METRIC
+                  Trial-to-Paid Conversion Rate
+                     (converted_to_paid)
+                                │
+      ┌─────────────────────────┼─────────────────────────┐
+      │                         │                         │
+      ▼                         ▼                         ▼
+ User Acquisition        User Activation         User Engagement
+      │                         │                         │
+ ┌────┴─────┐             ┌─────┴─────┐            ┌─────┴─────┐
+ ▼          ▼             ▼           ▼            ▼           ▼
+Landing    Trial      Onboarding   First Product  Engagement  Product
+Page       Started    Completion     Value         Score      Usage
+Visits     Trial        Rate         Achieved   (engagement_score)
+
+(visited_ (started_   (completed_
+landing_   trial)      onboarding)
+page)
+
+                                │
+                                ▼
+                 Trial-to-Paid Conversion Rate
+                      (converted_to_paid)
+
+──────────────────────────────────────────────────────────
+         Guardrail Metrics (Monitor Throughout)
+──────────────────────────────────────────────────────────
+• Support Tickets (support_tickets_30d)
+• Refund Requests (refund_requested)
+• 30-Day Revenue (revenue_30d)
+
+
+
+
+## Primary KPI Drivers
+
+### 1. User Acquisition
+
+
+Measures how effectively potential customers enter the onboarding funnel.
+
+
+
+Landing Page Visits (`visited_landing_page`) – Number of users who visit the landing page and become potential customers.
+Trial Started (`started_trial`)** – Percentage of visitors who begin a free trial after visiting the landing page.
+
+---
+
+### 2. User Activation
+
+
+Measures whether users successfully complete onboarding and quickly experience the product's value.
+
+
+
+Onboarding Completion Rate (`completed_onboarding`) – Percentage of users who successfully complete the onboarding process.
+First Product Value Achieved** – Whether users reach their first meaningful interaction or realize value from the product shortly after onboarding.
+
+---
+
+### 3. User Engagement
+
+
+Measures how actively users interact with the product during the trial period before deciding to subscribe.
+
+
+
+Engagement Score (engagement_score)– Composite measure of user activity and interaction with the product.
+Product Usage– Frequency or consistency of product use during the trial period, indicating continued interest and likelihood of conversion.
+
+
+
+## Guardrail Metrics
+
+While increasing the Trial-to-Paid Conversion Rate is the primary objective, growth should not come at the expense of customer satisfaction or operational efficiency. Therefore, the following guardrail metrics should be monitored throughout the experiment.
+
+| Guardrail Metric                            | Purpose                                                                                                                         
+
+Support Tickets (support_tickets_30d) Monitor whether the new onboarding process increases customer confusion or support demand.                                      
+Refund Requests (refund_requested) Ensure that higher conversions represent genuine customer value rather than dissatisfaction after purchase.                     
+30-Day Revenue (revenue_30d)       Confirm that increased conversions translate into meaningful revenue growth rather than low-value or short-lived subscriptions.|
+
+---
+
+## KPI Flow
+
+The KPI tree represents the customer journey through the onboarding funnel:
+
+User Acquisition
+
+Landing Page Visits
+Trial Started
+
+⬇
+
+User Activation
+
+* Onboarding Completion
+* First Product Value Achieved
+
+⬇
+
+User Engagement
+
+* Engagement Score
+* Product Usage
+
+⬇
+
+North Star Metric
+
+Trial-to-Paid Conversion Rate
+
+⬇
+
+Business Outcomes
+
+ Higher recurring subscription revenue
+Increased number of paying customers
+Improved customer lifetime value
+Sustainable long-term business growth
+
+Throughout this journey, the organization should continuously monitor **Support Tickets**, **Refund Requests**, and **30-Day Revenue** to ensure that improvements in conversion are sustainable and do not negatively affect customer experience or business performance.
